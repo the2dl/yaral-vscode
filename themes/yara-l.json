@@ -1,0 +1,54 @@
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "event.main.yaral",
+            "settings": {
+              "foreground": "#C586C0"
+            }
+          },
+          {
+            "scope": "allnumbers.yaral",
+            "settings": {
+              "foreground": "#b8cba9"
+            }
+          },
+          {
+            "scope": "openparenthesis.yaral",
+            "settings": {
+              "foreground": "#cc76d1"
+            }
+          },
+          {
+            "scope": "closeparenthesis.yaral",
+            "settings": {
+              "foreground": "#cc76d1"
+            }
+          },
+          {
+            "scope": "opencurly.yaral",
+            "settings": {
+              "foreground": "#e9ca46"
+            }
+          },
+          {
+            "scope": "closecurly.yaral",
+            "settings": {
+              "foreground": "#e9ca46"
+            }
+          },
+          {
+            "scope": "event.reregex.yaral",
+            "settings": {
+              "foreground": "#d3772e"
+            }
+          },
+          {
+            "scope": "event.regex.yaral",
+            "settings": {
+              "foreground": "#d3772e"
+            }
+          }
+        ]
+      }
+    }

@@ -2,9 +2,9 @@
     "name": "chronicle-yaral-syntax",
     "displayName": "Chronicle Yara-L Syntax", 
     "description": "Syntax highlighting for Chronicle Yara-L rule definition language",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "icon": "images/yara-l.png",                     
-    "publisher": "dansec",
+    "publisher": "the2dl",
     "license": "MIT License - Review LICENSE.md",
     "repository": {
         "type": "git",
@@ -30,6 +30,13 @@
             "aliases": ["Chronicle Yara-L"],      
             "extensions": [".yaral"]             
         }],
+        "themes": [
+            {
+                "label": "Yara-L Colors",
+                "uiTheme": "vs-dark",
+                "path": "./themes/yara-l.json"
+            }
+        ],
         "grammars": [{                          
             "language": "yaral",                  
             "scopeName": "source.yaral",          
