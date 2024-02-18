@@ -1,0 +1,39 @@
+{
+    "name": "chronicle-yaral-syntax",
+    "displayName": "Chronicle Yara-L Syntax", 
+    "description": "Syntax highlighting for Chronicle Yara-L rule definition language",
+    "version": "0.1.0",
+    "icon": "images/yara-l.png",                     
+    "publisher": "dansec",
+    "license": "MIT License - Review LICENSE.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/the2dl/yaral-vscode"
+    },
+    "main": "./extension.js",        
+
+    "engines": {
+        "vscode": "^1.60.0"                 
+    },
+
+    "categories": [                          
+        "Programming Languages"             
+    ],
+
+    "activationEvents": [                   
+        "onLanguage:yaral"                  
+    ],
+
+    "contributes": {
+        "languages": [{                            
+            "id": "yaral",                       
+            "aliases": ["Chronicle Yara-L"],      
+            "extensions": [".yaral"]             
+        }],
+        "grammars": [{                          
+            "language": "yaral",                  
+            "scopeName": "source.yaral",          
+            "path": "./syntaxes/chronicle-yaral.tmLanguage.json"  
+        }]
+    }
+}

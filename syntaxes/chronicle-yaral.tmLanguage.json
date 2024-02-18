@@ -1,0 +1,130 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Chronicle Yara-L",
+    "scopeName": "source.yaral",
+    "patterns": [
+        { "include": "#commentslash" },
+        { "include": "#commentstar" },
+        { "include": "#keywords" },
+        { "include": "#strings" },
+        { "include": "#metadata" },
+        { "include": "#rules" },
+        { "include": "#eventmain" },
+        { "include": "#allnumbers" },
+        { "include": "#regex" }, 
+        { "include": "#openparenthesis" },
+        { "include": "#closeparenthesis" },
+        { "include": "#opencurly" },
+        { "include": "#reregex" },
+        { "include": "#closecurly" } 
+    ],
+
+    "repository": {
+        "commentslash": {
+            "patterns": [
+                { 
+                    "match": "(//).*",  
+                    "name": "comment.line.double-slash.yaral" 
+                }
+            ]
+        },
+            "commentstar": {
+                "patterns": [
+                    { 
+                        "match": "\\/\\*[\\s\\S]*?\\*\\/",  
+                        "name": "comment.line.double-slash.yaral" 
+                    }
+                ]
+            },
+        "keywords": {
+            "match": "\\b(strings|import|true|false)\\b",
+            "name": "keyword.control.yaral"
+        },
+        "strings": {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double.yaral"
+        },
+        "metadata": {
+            "patterns": [ 
+                {
+                    "match": "\\b(events|rule|meta|outcome|condition|nocase|and|or|re.regex|max|min|avg|stdev|num_metric_periods|sum)\\b",
+                    "name": "entity.name.tag.metadata.yaral"
+                }
+            ]
+        },
+        "rules": {  
+            "begin": "(rule)\\s+(\\w+)", 
+            "beginCaptures": {
+                "1": { "name": "keyword.other.rule.yaral" },
+                "2": { "name":  "entity.name.function.rule.yaral" } 
+            },
+            "end": "\\}",
+            "name": "meta.rule.yaral"
+        }, 
+        "eventmain": { 
+            "patterns": [
+                { 
+                    "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*", 
+                    "name": "event.main.yaral" 
+                } 
+            ] 
+        },
+        "allnumbers": { 
+            "patterns": [
+                { 
+                    "match": "(\\b\\d+d?\\b|today)", 
+                    "name": "allnumbers.yaral" 
+                } 
+            ] 
+        },
+        "regex": { 
+            "patterns": [
+                { 
+                    "match": "\/[^\/]+\/", 
+                    "name": "event.regex.yaral" 
+                } 
+            ] 
+        },
+        "reregex": { 
+            "patterns": [
+                { 
+                    "match": "\\`(.*)\\`", 
+                    "name": "event.reregex.yaral" 
+                } 
+            ] 
+        },
+        "openparenthesis": { 
+            "patterns": [
+                { 
+                    "match": "\\(\\s*", 
+                    "name": "openparenthesis.yaral" 
+                } 
+            ] 
+        },
+        "closeparenthesis": { 
+            "patterns": [
+                { 
+                    "match": "\\s*\\)", 
+                    "name": "closeparenthesis.yaral" 
+                } 
+            ] 
+        },
+        "opencurly": { 
+            "patterns": [
+                { 
+                    "match": "\\{\\s*", 
+                    "name": "opencurly.yaral" 
+                } 
+            ] 
+        },
+        "closecurly": { 
+            "patterns": [
+                { 
+                    "match": "\\s*\\}", 
+                    "name": "closecurly.yaral" 
+                } 
+            ] 
+        }
+    }
+}
