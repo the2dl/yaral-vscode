@@ -73,7 +73,7 @@
         "allnumbers": { 
             "patterns": [
                 { 
-                    "match": "(\\b\\d+d?\\b|today)", 
+                    "match": "(\\b\\d+(d|h|m)?\\b|today)", 
                     "name": "allnumbers.yaral" 
                 } 
             ] 
