@@ -30,13 +30,6 @@
             "aliases": ["Chronicle Yara-L"],      
             "extensions": [".yaral"]             
         }],
-        "themes": [
-            {
-                "label": "Yara-L Colors",
-                "uiTheme": "vs-dark",
-                "path": "./themes/yara-l.json"
-            }
-        ],
         "grammars": [{                          
             "language": "yaral",                  
             "scopeName": "source.yaral",          
