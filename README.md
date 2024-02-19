@@ -20,7 +20,11 @@ Submit them, I'll merge them. Would love to see more than just Syntax Highlighti
 
 ## Colors
 
-Make sure to load up the contents of settings.json in the .vscode directory to match as closely as possible to Chronicle's IDE. 
+Make sure to load up the contents of [settings.json](https://github.com/the2dl/yaral-vscode/blob/main/.vscode/settings.json) in the .vscode directory to match as closely as possible to Chronicle's IDE. 
+
+Command Pallette > Settings > Preferences: Open Workspace Settings (JSON)
+
+You can update your current settings preferences, or completely overwrite them with these.
 
 ## Issues
 
