@@ -2,7 +2,7 @@
     "name": "chronicle-yaral-syntax",
     "displayName": "Chronicle Yara-L Syntax", 
     "description": "Syntax highlighting for Chronicle Yara-L rule definition language",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "icon": "images/yara-l.png",                     
     "publisher": "the2dl",
     "license": "MIT License - Review LICENSE.md",

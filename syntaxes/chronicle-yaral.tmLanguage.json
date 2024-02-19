@@ -48,7 +48,7 @@
         "metadata": {
             "patterns": [ 
                 {
-                    "match": "\\b(events|rule|meta|outcome|condition|nocase|and|or|re.regex|max|min|avg|stdev|num_metric_periods|sum)\\b",
+                    "match": "\\b(events|rule|meta|outcome|condition|match|nocase|and|or|re.regex|max|min|avg|stdev|num_metric_periods|sum)\\b",
                     "name": "entity.name.tag.metadata.yaral"
                 }
             ]
