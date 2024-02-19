@@ -48,7 +48,7 @@
         "metadata": {
             "patterns": [ 
                 {
-                    "match": "\\b(events|rule|meta|outcome|condition|match|nocase|and|or|re.regex|max|min|avg|stdev|num_metric_periods|sum)\\b",
+                    "match": "\\b(events|not|in|cidr|if|count_distinct|array_distinct|math.log|math.round|count|array|rule|meta|outcome|condition|match|nocase|and|or|re.regex|max|min|avg|stdev|num_metric_periods|sum|arrays.length|math.abs|net.ip_in_range_cidr|re.capture|re.replace|strings.base64_decode|strings.coalesce|strings.concat|strings.to_upper|strings.to_lower|timestamp.current_timestamp|timestamp.get_hour|timestamp.get_day_of_week|timestamp.get_week)\\b",
                     "name": "entity.name.tag.metadata.yaral"
                 }
             ]
